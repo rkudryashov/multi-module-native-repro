@@ -1,0 +1,14 @@
+[versions]
+springBoot = "3.5.4"
+kotlin = "2.2.0"
+nativeBuildTools = "0.11.0"
+
+[libraries]
+springBootStarter-web = { module = "org.springframework.boot:spring-boot-starter-web" }
+kotlinReflect = { module = "org.jetbrains.kotlin:kotlin-reflect" }
+
+[plugins]
+springBoot = { id = "org.springframework.boot", version.ref = "springBoot" }
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+kotlin-spring = { id = "org.jetbrains.kotlin.plugin.spring", version.ref = "kotlin" }
+nativeBuildTools = { id = "org.graalvm.buildtools.native", version.ref = "nativeBuildTools" }
